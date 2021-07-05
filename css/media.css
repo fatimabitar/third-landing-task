@@ -220,6 +220,7 @@ html{
 header > .text-content{
     font-size: 2rem;
     padding: 30rem 0;
+    height: 50%;
 }
 header > .advice{
     padding: 3rem;
