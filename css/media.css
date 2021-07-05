@@ -222,6 +222,9 @@ header > .text-content{
     padding: 30rem 0;
     height: 50%;
 }
+.slider-points{
+    height: 20%;
+}
 header > .advice{
     padding: 3rem;
     align-items: center;
