@@ -1,110 +1,42 @@
 @media (max-width: 1200px) {
-    html{
-        font-size: 60%;
-      }
-      /*Navbar*/
-      .navigation{
-        top: -10px;
-      }
-      .navigation > .logo{
-        width: 60%;
-      }
-      .navigation > .nav{
-        width: 40%;
-      }
-      /*Header*/
-      header > .text-content{
-        font-size: 2rem;
-        padding: 22rem 0;
+  html{
+      font-size: 60%;
     }
-      header > .text-content > .text{
-        padding-top: 3rem;
-      }
-      header > .advice{
-        padding: 3rem;
-        justify-content: space-around;
-      }
-      header > .advice> .text{
-      margin-right: 0;
-      padding: 1rem;
-      font-size: 1.6rem;
-      }
-      header > .advice > .btn{
-        width: 15%;
-        padding: 1.5rem 0;
-      }
-      /*About*/
-      .about > .container > .about-box > .service > .text-div > h2{
-        font-size: 2rem;
-      }
-      /* Blog section */
-.blog{
-    margin-top: 10rem;
-  }
-  .blog > .container > .news-container{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "Main-news second"
-    "third fourth";
-    gap: 50px 30px; 
-  }
-  .Main-news > .text-div {
-    text-align: center;
-  }
-  .Main-news > .text-div > .text{
-    margin-bottom: 1.5rem;
-  }
-  .Main-news > .text-div > h3,
-  .secondry-news > .text-div > h3{
-    margin: 3rem auto;
-  }
-  .Main-news > .text-div > .text,
-  .secondry-news > .text-div > .text{
-    font-size: 1.6rem;
-  }
-  .secondry-news{
-    margin: 0 auto;
-    text-align: center;
-  }
-  .secondry-news > .img-div,
-  .secondry-news > .text-div{
-    clear: both;
-    width: 100%;
-    height: auto;
-  }
-  .secondry-news:last-child{
-    margin: 0;
-  }
-  .Main-news > .text-div > .read-btn,
-  .secondry-news > .text-div > .read-btn{
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 992px) {
-    html{
-        font-size: 58%;
-    }
-    /* Navbar */
-    .navigation{
-        top: -14px;
-    }
+    /*Navbar*/
     .navigation > .logo{
-        width: 50%;
+      width: 60%;
     }
     .navigation > .nav{
-        width: 50%;
+      width: 50%;
+    }
+    .navigation > .logo {
+      width: 80%;
+      height: 100px;
+    }
+    .navigation > .logo >.insider{
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .navigation > .logo >.insider> img{
+      width: 30%;
+      padding: 1rem;
     }
     /*Header*/
+    header{
+      margin-bottom: 10rem;
+    }
     header > .text-content{
-        font-size: 2rem;
-        padding: 25rem 0;
+      font-size: 2rem;
+      padding: 25rem 0 0;
+  }
+    header > .text-content > .text{
+      padding-top: 3rem;
     }
     header > .advice{
-        padding: 3rem;
-        flex-direction: row;
-        justify-content: space-around;
+      padding: 3rem;
+      justify-content: space-around;
     }
     header > .advice> .text{
     margin-right: 0;
@@ -112,342 +44,683 @@
     font-size: 1.6rem;
     }
     header > .advice > .btn{
-        width: 15%;
-        padding: 1.5rem 0;
+      width: 20%;
+      padding: 1.5rem 0;
     }
     /*About*/
-    .about > .container > .about-box{
-      flex-direction: column;
-    }
-    .about > .container > .about-box > .service > .text-div > .text{
-        width: 75%;
-        margin: 3rem auto;
+    .about > .container > .about-box > .service > .text-div > h2{
+      font-size: 2rem;
     }
     /* Blog section */
-  /************************/
-  .blog{
-    margin-top: 10rem;
+.blog{
+  margin-top: 10rem;
+}
+.blog > .container > .news-container{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "Main-news second"
+  "third fourth";
+  gap: 50px 30px; 
+}
+.Main-news > .text-div {
+  text-align: center;
+}
+.Main-news > .text-div > .text{
+  margin-bottom: 1.5rem;
+}
+.Main-news > .text-div > h3,
+.secondry-news > .text-div > h3{
+  margin: 3rem auto;
+}
+.Main-news > .text-div > .text,
+.secondry-news > .text-div > .text{
+  font-size: 1.6rem;
+}
+.secondry-news{
+  margin: 0 auto;
+  text-align: center;
+}
+.secondry-news > .img-div,
+.secondry-news > .text-div{
+  clear: both;
+  width: 100%;
+  height: auto;
+}
+.secondry-news:last-child{
+  margin: 0;
+}
+.Main-news > .text-div > .read-btn,
+.secondry-news > .text-div > .read-btn{
+  font-size: 1.7rem;
+  margin: 3rem 0 0;
+  position: relative;
+  float: none;
+}
+/*  Contact section   */
+/*************************************/
+.contact > .fluid-container >.container{
+  width: 100%;
+}
+.box > .logo{
+  width: 12%;
+}
+.box > .gallery{
+  margin-left: 5rem;
+}
+.box > .social{
+  width: 30%;
+  margin-left: 5rem;
+}
+.box > .social > .subscribing> span{
+  float: none;
+  display: inline;
+  margin-right: 1.5rem;
+  padding: 1rem 1.2rem;
+}
+}
+
+@media (max-width: 992px) {
+  html{
+      font-size: 58%;
   }
-  .blog > .container > .news-container{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "Main-news second"
-    "third fourth";
-    gap: 50px 30px; 
+  /* Navbar */
+  .navigation > .nav{
+      width: 70%;
   }
-  .Main-news > .text-div {
-    text-align: center;
+  .navigation > .logo {
+    width: 80%;
+    height: 100px;
   }
-  .Main-news > .text-div > .text{
-    margin-bottom: 1rem;
+  .navigation > .logo >.insider{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .Main-news > .text-div > h3,
-  .secondry-news > .text-div > h3{
-    margin: 3rem auto;
+  .navigation > .logo >.insider> img{
+    width: 35%;
   }
-  .Main-news > .text-div > .text,
-  .secondry-news > .text-div > .text{
-    font-size: 1.6rem;
+  /*Header*/
+  header{
+    margin-bottom: 10rem;
   }
-  .secondry-news{
-    margin: 0 auto;
-    text-align: center;
+  header > .text-content{
+      font-size: 2rem;
+      padding: 25rem 0 0;
   }
-  .secondry-news > .img-div,
-  .secondry-news > .text-div{
-    clear: both;
-    width: 100%;
-    height: auto;
+  header > .advice{
+      padding: 3rem;
+      flex-direction: row;
+      justify-content: space-around;
   }
-  .secondry-news:last-child{
-    margin: 0;
+  header > .advice> .text{
+  margin-right: 0;
+  padding: 1rem;
+  font-size: 1.6rem;
   }
-  .Main-news > .text-div > .read-btn,
-  .secondry-news > .text-div > .read-btn{
-    font-size: 1.8rem;
-    margin: 1rem 0 0;
+  header > .advice > .btn{
+      width: 150px;
+      padding: 1.5rem 0;
   }
+  /*About*/
+  .about > .container > .about-box{
+    flex-direction: column;
+  }
+  .about > .container > .about-box > .service > .text-div > .text{
+      width: 75%;
+      margin: 3rem auto;
+  }
+  /* Blog section */
+/************************/
+.blog{
+  margin-top: 10rem;
+}
+.blog > .container > .news-container{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "Main-news second"
+  "third fourth";
+  gap: 50px 30px; 
+}
+.Main-news > .text-div {
+  text-align: center;
+}
+.Main-news > .text-div > .text{
+  margin-bottom: 1rem;
+}
+.Main-news > .text-div > h3,
+.secondry-news > .text-div > h3{
+  margin: 3rem auto;
+}
+.Main-news > .text-div > .text,
+.secondry-news > .text-div > .text{
+  font-size: 1.6rem;
+}
+.secondry-news{
+  margin: 0 auto;
+  text-align: center;
+}
+.secondry-news > .img-div,
+.secondry-news > .text-div{
+  clear: both;
+  width: 100%;
+  height: auto;
+}
+.secondry-news:last-child{
+  margin: 0;
+}
+.Main-news > .text-div > .read-btn,
+.secondry-news > .text-div > .read-btn{
+  font-size: 1.7rem;
+  margin: 3rem 0 0;
+  position: relative;
+  float: none;
+}
+/*Footer*/
+/*************************/
+.box{
+  width: 100%;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.contact{
+  clip-path: ellipse(150% 100% at 47% 100%);}
+.contact > .fluid-container{
+  clip-path: ellipse(150% 97% at 47% 100%);
+}
+.box > .logo,
+.box > .gallery{
+  display: none;
+}
+.box >.simple-nav{
+  width: 100%;
+  margin: 5rem auto;
+  text-align: center;
+}
+.box > .simple-nav > .nav-link{
+  display: inline-block;
+  margin-left: 1rem;
+}
+.box > .social{
+  width: 100%;
+  margin: 0;
+}
+.box > .social > .subscribing{
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+.box > .social > .subscribing > input{
+  width: auto;
+  margin: 2rem 1rem 0 0;
+}
+.box > .social > .subscribing> span{
+  float: none;
+  margin: 0 auto;
+  display: inline;
+  padding: 1rem 1.5rem;
+}
+.box > .social > .follow{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.box > .social > .follow > h3{
+  margin-bottom: 1rem;
+}
+.info{
+flex-direction: column;
+text-align: center;
+}
+.info > .copy-rights>.text{
+  margin-bottom: 2rem;
+}
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 55%;
-  }
-  .container {
-    width: 65%;
-  }
-  /*Navbar*/
-  .navigation {
-    top: -20px;
-  }
-  .navigation > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
-  .navigation > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 20px;
-  }
-  .navigation > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-    cursor: pointer;
-  }
+html {
+  font-size: 55%;
+}
+.container {
+  width: 65%;
+}
+/*Navbar*/
+.navigation > .nav-btn {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.navigation > .nav-btn > label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+.navigation > .nav-btn > label > span {
+  display: block;
+  width: 25px;
+  height: 10px;
+  border-top: 2px solid #eee;
+  cursor: pointer;
+}
 
-  .fa-bars {
-    display: none;
-  }
-  .nav > .nav-menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background: linear-gradient(rgb(10, 38, 77), rgb(17, 71, 107));
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0;
-  }
-  .navigation > .nav > .nav-menu > .nav-item {
-    display: block;
-    margin: 5rem 0;
-    width: 100%;
-    padding: 1rem 0;
-  }
-  .navigation > .nav > .nav-menu > .nav-item:hover {
-    background-color: #eee;
-  }
-  .navigation > .nav > .nav-menu > .nav-item > .nav-link:hover {
-    color: var(--main-color);
-    border-bottom: 0;
-  }
-  .navigation #nav-check:not(:checked) ~ .nav > .nav-menu {
-    height: 0;
-  }
-  .navigation #nav-check:checked ~ .nav > .nav-menu {
-    height: 100vh;
-    overflow-y: auto;
-  }
-  .navigation > .logo {
-    width: 85%;
-  }
+.fa-bars {
+  display: none;
+}
+.nav > .nav-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(rgb(10, 38, 77), rgb(17, 71, 107));
+  transition: all 0.3s ease-in;
+  overflow-y: hidden;
+  top: 50px;
+  left: 0;
+}
+.navigation > .nav > .nav-menu > .nav-item {
+  display: block;
+  margin: 5rem 0;
+  width: 100%;
+  padding: 1rem 0;
+}
+.navigation > .nav > .nav-menu > .nav-item:hover {
+  background-color: #eee;
+}
+.navigation > .nav > .nav-menu > .nav-item > .nav-link:hover {
+  color: var(--main-color);
+  border-bottom: 0;
+}
+.navigation #nav-check:not(:checked) ~ .nav > .nav-menu {
+  height: 0;
+}
+.navigation #nav-check:checked ~ .nav > .nav-menu {
+  height: 100vh;
+  overflow-y: auto;
+}
+.navigation > .logo {
+  width: 100%;
+  height: 100px;
+}
+.navigation > .logo >.insider{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation > .logo >.insider> img{
+  width: 40%;
+  padding-top: 1.5rem;}
 
-  /*Header*/
-  header > .text-content {
-    padding: 20rem 0;
-  }
-  header > .advice {
-    padding: 3rem;
-    align-items: center;
-    flex-direction: column;
-  }
-  header > .advice > .text {
-    margin-right: 0;
-    padding: 1rem;
-  }
-  header > .advice > .btn {
-    width: 20%;
-  }
-  /*About*/
-  .about > .container > .about-box {
+/*Header*/
+header{
+  margin-bottom: 10rem;
+}
+header > .text-content {
+  padding: 20rem 0 0;
+}
+.slider-points {
+  padding-bottom: 2rem;
+}
+header > .advice {
+  padding: 3rem;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
+}
+header > .advice > .text {
+  margin-right: 0;
+  padding: 1rem;
+}
+header > .advice > .btn {
+  width: 150px;
+}
+/*About*/
+.about > .container > .about-box {
 flex-direction: column;
 }
 /* Blog */
 /*************************/
 .blog > .container > .news-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr;
-    grid-template-areas:
-    "Main-news"
-    "second"
-    "third"
-    "fourth";
-    gap: 30px 30px; 
-  }
-  .secondry-news{
-    margin: 0 auto;
-    text-align: center;
-  }
-  .secondry-news > .img-div,
-  .secondry-news > .text-div{
-    clear: both;
-    width: 100%;
-    height: auto;
-  }
-  .secondry-news > .text-div > h3{
-    margin:3rem 0;
-  }
-  .Main-news > .text-div > h3{
-    margin: 3rem 0;
-    text-align: center;
-  }
-  .Main-news > .text-div > .text,
-  .secondry-news > .text-div > .text{
-    text-align: center;
-  }
-  .Main-news > .text-div > .read-btn,
-  .secondry-news > .text-div > .read-btn{
-    font-size: 1.8rem;
-  }
-  .blog > .container > .secondry-header{
-    margin: 6rem 0  3rem;
-  }
-  .Main-news > .text-div > .read-btn,
-  .secondry-news > .text-div > .read-btn{
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  grid-template-areas:
+  "Main-news"
+  "second"
+  "third"
+  "fourth";
+  gap: 30px 30px; 
+}
+.secondry-news{
+  margin: 0 auto;
+  text-align: center;
+}
+.secondry-news > .img-div,
+.secondry-news > .text-div{
+  clear: both;
+  width: 100%;
+  height: auto;
+}
+.secondry-news > .text-div > h3{
+  margin:3rem 0;
+}
+.Main-news > .text-div > h3{
+  margin: 3rem 0;
+  text-align: center;
+}
+.Main-news > .text-div > .text,
+.secondry-news > .text-div > .text{
+  text-align: center;
+}
+.Main-news > .text-div > .read-btn,
+.secondry-news > .text-div > .read-btn{
+  font-size: 1.8rem;
+}
+.blog > .container > .secondry-header{
+  margin: 6rem 0  3rem;
+}
+.secondry-news > .text-div > .text{
   font-size: 1.6rem;
-  margin: 1.5rem 0;
-  }}
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.Main-news > .text-div > .read-btn{
+margin: 3rem auto;
+float: none;
+}
+.secondry-news > .text-div > .read-btn{
+position: relative;
+font-size: 1.6rem;
+margin: 3rem auto;
+}
+/*Footer*/
+/*************************/
+.contact{
+  clip-path: ellipse(150% 100% at 47% 100%);}
+.contact > .fluid-container{
+  clip-path: ellipse(150% 97% at 47% 100%);
+}
+.contact > .fluid-container >.container{
+  width: 100%;
+}
+.box{
+  width: 100%;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.box > .logo,
+.box > .gallery{
+  display: none;
+}
+.box >.simple-nav{
+  width: 100%;
+  margin: 5rem auto;
+  text-align: center;
+}
+.box > .simple-nav > .nav-link{
+  display: inline-block;
+  margin-left: 1rem;
+}
+.box > .social{
+  width: 100%;
+  margin: 0;
+}
+.box > .social > .subscribing{
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+.box > .social > .subscribing > input{
+  width: auto;
+  margin: 2rem 1rem 0 0;
+}
+.box > .social > .subscribing> span{
+  float: none;
+  margin: 0 auto;
+  display: inline;
+  padding: 1rem 1.5rem;
+}
+.box > .social > .follow{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.box > .social > .follow > h3{
+  margin-bottom: 1rem;
+}
+.info{
+flex-direction: column;
+text-align: center;
+}
+.info > .copy-rights>.text{
+  margin-bottom: 2rem;
+}}
 
 @media (max-width: 600px) {
-  html {
-    font-size: 50%;
-  }
-  .container {
-    width: 80%;
-  }
-  /*Navbar*/
-  .navigation {
-    top: -20px;
-  }
-  .navigation > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
-  .navigation > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 20px;
-  }
-  .navigation > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
+html {
+  font-size: 50%;
+}
+.container {
+  width: 80%;
+}
+/*Navbar*/
+.navigation > .nav-btn {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.navigation > .nav-btn > label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+.navigation > .nav-btn > label > span {
+  display: block;
+  width: 25px;
+  height: 10px;
+  border-top: 2px solid #eee;
+}
 
-  .fa-bars {
-    display: none;
-  }
-  .nav > .nav-menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--main-color);
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0;
-  }
-  .navigation > .nav > .nav-menu > .nav-item {
-    display: block;
-    margin: 5rem 0;
-    width: 100%;
-    padding: 1rem 0;
-  }
-  .navigation > .nav > .nav-menu > .nav-item:hover {
-    background-color: #eee;
-  }
-  .navigation > .nav > .nav-menu > .nav-item > .nav-link:hover {
-    color: var(--main-color);
-    border-bottom: 0;
-  }
-  .navigation #nav-check:not(:checked) ~ .nav > .nav-menu {
-    height: 0;
-  }
-  .navigation #nav-check:checked ~ .nav > .nav-menu {
-    height: 100vh;
-    overflow-y: auto;
-  }
-  .navigation > .logo {
-    width: 85%;
-  }
-  /*Header*/
-  /********************/
-  header > .text-content {
-    padding: 30rem 0;
-    height: 65%;
-  }
-  .slider-points {
-    height: 25%;
-    padding-bottom: 3rem;
-  }
-  header > .advice {
-    height: 15%;
-    padding: 3rem;
-    align-items: center;
-    flex-direction: column;
-  }
-  header > .advice > .text {
-    margin-right: 0;
-    padding: 1rem;
-  }
-  header > .advice > .btn {
-    width: 20%;
-    padding: 1.2rem 0;
-  }
-  /*About*/
-  /***********************/
-  .about {
-    margin-bottom: 10rem;
-  }
-  .about > .container > .about-box {
-    flex-direction: column;
-  }
-  .about > .container > .about-box > .service > .text-div > .text {
-    width: 80%;
-    margin: 03rem auto;
-  }
-  /* Blog */
+.fa-bars {
+  display: none;
+}
+.nav > .nav-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--main-color);
+  transition: all 0.3s ease-in;
+  overflow-y: hidden;
+  top: 50px;
+  left: 0;
+}
+.navigation > .nav > .nav-menu > .nav-item {
+  display: block;
+  margin: 5rem 0;
+  width: 100%;
+  padding: 1rem 0;
+}
+.navigation > .nav > .nav-menu > .nav-item:hover {
+  background-color: #eee;
+}
+.navigation > .nav > .nav-menu > .nav-item > .nav-link:hover {
+  color: var(--main-color);
+  border-bottom: 0;
+}
+.navigation #nav-check:not(:checked) ~ .nav > .nav-menu {
+  height: 0;
+}
+.navigation #nav-check:checked ~ .nav > .nav-menu {
+  height: 100vh;
+  overflow-y: auto;
+}
+.navigation > .logo {
+  width: 100%;
+  height: 100px;
+}
+.navigation > .logo >.insider{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation > .logo >.insider> img{
+  width: 45%;
+  padding-top: 1.5rem;
+}
+/*Header*/
+/********************/
+header{
+  margin-bottom: 10rem;
+}
+header .text-content{
+  padding: 25rem 0 0;
+}
+.slider-points {
+  padding-bottom: 2rem;
+}
+header > .advice {
+  padding: 3rem;
+  align-items: center;
+  flex-direction: column;
+}
+header > .advice > .text {
+  margin-right: 0;
+  padding: 1rem;
+}
+header > .advice > .btn {
+  width: 150px;
+  padding: 1.2rem 1rem;
+}
+/*About*/
+/***********************/
+.about {
+  margin-bottom: 10rem;
+}
+.about > .container > .about-box {
+  flex-direction: column;
+}
+.about > .container > .about-box > .service > .text-div > .text {
+  width: 80%;
+  margin: 03rem auto;
+}
+/* Blog */
 /*************************/
 .blog > .container > .news-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr;
-    grid-template-areas:
-    "Main-news"
-    "second"
-    "third"
-    "fourth";
-    gap: 30px 30px; 
-  }
-  .secondry-news{
-    margin: 0 auto;
-    text-align: center;
-  }
-  .secondry-news > .img-div,
-  .secondry-news > .text-div{
-    clear: both;
-    width: 100%;
-    height: auto;
-  }
-  .secondry-news > .text-div > h3{
-    margin:3rem 0;
-  }
-  .Main-news > .text-div > h3{
-    margin: 3rem 0;
-    text-align: center;
-  }
-  .Main-news > .text-div > .text,
-  .secondry-news > .text-div > .text{
-    text-align: center;
-  }
-  .secondry-news > .text-div > .text{
-      font-size: 1.6rem;
-  }
-  .Main-news > .text-div > .read-btn,
-  .secondry-news > .text-div > .read-btn{
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  grid-template-areas:
+  "Main-news"
+  "second"
+  "third"
+  "fourth";
+  gap: 30px 30px; 
+}
+.secondry-news{
+  margin: 0 auto;
+  text-align: center;
+}
+.secondry-news > .img-div,
+.secondry-news > .text-div{
+  clear: both;
+  width: 100%;
+  height: auto;
+}
+.secondry-news > .text-div > h3{
+  margin:3rem 0;
+}
+.Main-news > .text-div > h3{
+  margin: 3rem 0;
+  text-align: center;
+}
+.secondry-news > .text-div > .text{
+  text-align: center;
   font-size: 1.6rem;
-  margin: 1.5rem 0;
-  }
+  margin-bottom: 3rem;
+}
+.secondry-news > .text-div > .text{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.Main-news > .text-div > .read-btn{
+margin: 1.5rem auto;
+text-align: center;
+}
+.secondry-news > .text-div > .read-btn{
+  position: relative;
+  font-size: 1.6rem;
+  margin: 3rem auto;
+}
+/*Footer*/
+/*************************/
+.contact{
+  clip-path: ellipse(150% 100% at 47% 100%);}
+.contact > .fluid-container{
+  clip-path: ellipse(150% 97% at 47% 100%);
+}
+.contact > .fluid-container >.container{
+  width: 100%;
+}
+.box{
+  width: 100%;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.box > .logo,
+.box > .gallery{
+  display: none;
+}
+.box >.simple-nav{
+  width: 100%;
+  margin: 5rem auto;
+  text-align: center;
+}
+.box > .simple-nav > .nav-link{
+  display: inline-block;
+  margin-left: 1rem;
+}
+.box > .social{
+  width: 100%;
+  margin: 0;
+}
+.box > .social > .subscribing{
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+.box > .social > .subscribing > input{
+  width: auto;
+  margin: 2rem 1rem 0 0;
+}
+.box > .social > .subscribing> span{
+  float: none;
+  margin: 0 auto;
+  display: inline;
+  padding: 1rem 1.5rem;
+}
+.box > .social > .follow{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.box > .social > .follow > h3{
+  margin-bottom: 1rem;
+}
+.info{
+flex-direction: column;
+text-align: center;
+}
+.info > .copy-rights>.text{
+  margin-bottom: 2rem;
 }
 }
