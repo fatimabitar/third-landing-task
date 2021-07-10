@@ -74,10 +74,12 @@ html{
   background-color: var(--shade-of-blue);
   clip-path: ellipse(57% 100% at 45.31% 0%);
   z-index: 1;
+  height: 110px;
 }
 .navigation > .logo >.insider{
   clip-path: ellipse(48% 100% at 48% 0%);
-  background-color: #fff
+  background-color: #fff;
+  height: 100px;
 }
 .navigation > .logo >.insider> img{
   width: 25%;

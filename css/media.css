@@ -14,7 +14,7 @@
       height: 100px;
     }
     .navigation > .logo >.insider{
-      height: 100px;
+      height: 90px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -133,7 +133,7 @@
     height: 100px;
   }
   .navigation > .logo >.insider{
-    height: 100px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,6 +288,9 @@ html {
   width: 65%;
 }
 /*Navbar*/
+.navigation .nav{
+  width: 10%;
+}
 .navigation > .nav-btn {
   display: inline-block;
   position: absolute;
@@ -343,11 +346,11 @@ html {
   overflow-y: auto;
 }
 .navigation > .logo {
-  width: 100%;
+  width: 80%;
   height: 100px;
 }
 .navigation > .logo >.insider{
-  height: 100px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,6 +512,9 @@ html {
   width: 80%;
 }
 /*Navbar*/
+.navigation .nav{
+  width: 10%;
+}
 .navigation > .nav-btn {
   display: inline-block;
   position: absolute;
@@ -563,18 +569,20 @@ html {
   overflow-y: auto;
 }
 .navigation > .logo {
-  width: 100%;
-  height: 100px;
+  width: 90%;
+  height: 80px;
+  clip-path: ellipse(57% 100% at 42.3% 0%);
 }
 .navigation > .logo >.insider{
-  height: 100px;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
+  clip-path: ellipse(48% 100% at 42.31% 0%);
 }
 .navigation > .logo >.insider> img{
-  width: 45%;
-  padding-top: 1.5rem;
+  width: 40%;
+  padding-bottom: 3rem;
 }
 /*Header*/
 /********************/
