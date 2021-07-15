@@ -1,3 +1,22 @@
+@media (max-width:1525px){
+  .blog > .container > .news-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(3,200px); 
+  }
+  .main-news > .img-div{
+    height: 66%;
+  }
+  .main-news > .img-div > img{
+    height: 100%;
+  }
+  .main-news > .text-div{
+    height: 34%;
+  }
+  .main-news > .text-div > .read-btn{
+    bottom:5%;
+  }
+}
 @media (max-width: 1200px) {
   html{
       font-size: 60%;
@@ -63,17 +82,19 @@
   "third fourth";
   gap: 50px 30px; 
 }
-.Main-news > .text-div {
-  text-align: center;
+.main-news > .img-div,
+.main-news > .text-div{
+height: auto;
+text-align: center;
 }
-.Main-news > .text-div > .text{
+.main-news > .text-div > .text{
   margin-bottom: 1.5rem;
 }
-.Main-news > .text-div > h3,
+.main-news > .text-div > h3,
 .secondry-news > .text-div > h3{
   margin: 3rem auto;
 }
-.Main-news > .text-div > .text,
+.main-news > .text-div > .text,
 .secondry-news > .text-div > .text{
   font-size: 1.6rem;
 }
@@ -90,7 +111,7 @@
 .secondry-news:last-child{
   margin: 0;
 }
-.Main-news > .text-div > .read-btn,
+.main-news > .text-div > .read-btn,
 .secondry-news > .text-div > .read-btn{
   font-size: 1.7rem;
   margin: 3rem 0 0;
@@ -184,17 +205,19 @@
   "third fourth";
   gap: 50px 30px; 
 }
-.Main-news > .text-div {
-  text-align: center;
+.main-news > .img-div,
+.main-news > .text-div{
+height: auto;
 }
-.Main-news > .text-div > .text{
+
+.main-news > .text-div > .text{
   margin-bottom: 1rem;
 }
-.Main-news > .text-div > h3,
+.main-news > .text-div > h3,
 .secondry-news > .text-div > h3{
   margin: 3rem auto;
 }
-.Main-news > .text-div > .text,
+.main-news > .text-div > .text,
 .secondry-news > .text-div > .text{
   font-size: 1.6rem;
 }
@@ -211,7 +234,7 @@
 .secondry-news:last-child{
   margin: 0;
 }
-.Main-news > .text-div > .read-btn,
+.main-news > .text-div > .read-btn,
 .secondry-news > .text-div > .read-btn{
   font-size: 1.7rem;
   margin: 3rem 0 0;
@@ -402,6 +425,10 @@ flex-direction: column;
   margin: 0 auto;
   text-align: center;
 }
+.main-news > .img-div,
+.main-news > .text-div{
+height: auto;
+}
 .secondry-news > .img-div,
 .secondry-news > .text-div{
   clear: both;
@@ -411,15 +438,18 @@ flex-direction: column;
 .secondry-news > .text-div > h3{
   margin:3rem 0;
 }
-.Main-news > .text-div > h3{
+.main-news > .text-div > h3{
   margin: 3rem 0;
   text-align: center;
 }
-.Main-news > .text-div > .text,
+.main-news > .text-div > .text{
+  margin-bottom: 3rem;
+}
+.main-news > .text-div > .text,
 .secondry-news > .text-div > .text{
   text-align: center;
 }
-.Main-news > .text-div > .read-btn,
+.main-news > .text-div > .read-btn,
 .secondry-news > .text-div > .read-btn{
   font-size: 1.8rem;
 }
@@ -431,7 +461,7 @@ flex-direction: column;
   margin-bottom: 3rem;
   text-align: center;
 }
-.Main-news > .text-div > .read-btn{
+.main-news > .text-div > .read-btn{
 margin: 3rem auto;
 float: none;
 }
@@ -636,6 +666,10 @@ header > .advice > .btn {
   margin: 0 auto;
   text-align: center;
 }
+.main-news > .img-div,
+.main-news > .text-div{
+height: auto;
+}
 .secondry-news > .img-div,
 .secondry-news > .text-div{
   clear: both;
@@ -645,7 +679,7 @@ header > .advice > .btn {
 .secondry-news > .text-div > h3{
   margin:3rem 0;
 }
-.Main-news > .text-div > h3{
+.main-news > .text-div > h3{
   margin: 3rem 0;
   text-align: center;
 }
@@ -659,9 +693,10 @@ header > .advice > .btn {
     margin-bottom: 3rem;
     text-align: center;
 }
-.Main-news > .text-div > .read-btn{
+.main-news > .text-div > .read-btn{
 margin: 1.5rem auto;
 text-align: center;
+bottom: -1%;
 }
 .secondry-news > .text-div > .read-btn{
   position: relative;
